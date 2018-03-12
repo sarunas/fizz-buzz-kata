@@ -13,7 +13,7 @@ Write a program that prints the numbers from 1 to 100. But for multiples of thre
 ## Step 2
 
 - Add 3rd rule with number 7 and word "Foo"
-- Add 4rd rule with number 11 and word "Boo"
+- Add 4th rule with number 11 and word "Boo"
 
 ## Step 3
 
@@ -29,4 +29,3 @@ Write a program that prints the numbers from 1 to 100. But for multiples of thre
 
 - Add new type of rule "multiple of 3 and 5" and word "FTW"
 - Add new type of rule "multiple of 3 or 5" and word "GG"
-
