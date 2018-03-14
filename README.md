@@ -2,6 +2,15 @@
 
 Exercise on generalisation and abstraction
 
+## How to start
+
+```
+git clone git@github.com:sarunas/fizz-buzz-kata.git
+cd fizz-buzz-kata
+npm install
+npm run watch
+```
+
 ## Task
 
 Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
