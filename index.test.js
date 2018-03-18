@@ -2,33 +2,61 @@ const { fizzBuzz } = require('./index');
 const fixtures = require('./fixtures');
 
 describe('fizzBuzz', () => {
-  test('should return original ', () => {
+  test('should return original', () => {
     expect(fizzBuzz()).toEqual(fixtures.fizzBuzz);
   });
 
-  test.skip('step 1: should return custom range', () => {
-    expect(fizzBuzz()).toEqual(fixtures.fizzBuzzWithRange1to20);
-    expect(fizzBuzz()).toEqual(fixtures.fizzBuzzWithRange15to50);
+  describe('step 1', () => {
+    test.skip('should work with range 1 to 20', () => {
+      expect(fizzBuzz()).toEqual(fixtures.fizzBuzzFrom1to20);
+    });
+
+    test.skip('should work with range 15 to 50', () => {
+      expect(fizzBuzz()).toEqual(fixtures.fizzBuzzFrom15to50);
+    })
   });
 
-  test.skip('step 2: should return with more rules', () => {
-    expect(fizzBuzz()).toEqual(fixtures.fizzBuzzWithFooRule);
-    expect(fizzBuzz()).toEqual(fixtures.fizzBuzzWithBooRule);
-    expect(fizzBuzz()).toEqual(fixtures.fizzBuzzWithFooAndBooRule);
+  describe('step 2', () => {
+    test.skip('should work with additional Foo rule', () => {
+      expect(fizzBuzz()).toEqual(fixtures.fizzBuzzFoo);
+    });
+
+    test.skip('should work with additional Boo rule', () => {
+      expect(fizzBuzz()).toEqual(fixtures.fizzBuzzBoo);
+    });
+
+    test.skip('should work with both additional Foo and Boo rules', () => {
+      expect(fizzBuzz()).toEqual(fixtures.fizzBuzzFooBoo);
+    });
   });
 
-  test.skip('step 3: should return with event more rules', () => {
-    expect(fizzBuzz()).toEqual(fixtures.fizzBuzzWithLessThanRule);
-    expect(fizzBuzz()).toEqual(fixtures.fizzBuzzWithMoreThanRule);
+  describe('step 3', () => {
+    test.skip('should work with Small rule', () => {
+      expect(fizzBuzz()).toEqual(fixtures.smallFizzBuzz);
+    });
+
+    test.skip('should work with Big rule', () => {
+      expect(fizzBuzz()).toEqual(fixtures.bigFizzBuzz);
+    });
   });
 
-  test.skip('step 4: should be possible to change rules ordering', () => {
-    expect(fizzBuzz()).toEqual(fixtures.fizzBuzzWithChangedOrderBuzzFizz);
-    expect(fizzBuzz()).toEqual(fixtures.fizzBuzzWithChangedOrderBuzzSmallFizz);
+  describe('step 4', () => {
+    test.skip('should work as BuzzFizz', () => {
+      expect(fizzBuzz()).toEqual(fixtures.buzzFizz);
+    });
+
+    test.skip('should work as BuzzSmallFizz', () => {
+      expect(fizzBuzz()).toEqual(fixtures.buzzSmallFizz);
+    });
   });
 
-  test.skip('step 5: should return with complex rule only', () => {
-    expect(fizzBuzz()).toEqual(fixtures.fizzBuzzWithComplexRule3And5);
-    expect(fizzBuzz()).toEqual(fixtures.fizzBuzzWithComplexRule3Or5);
+  describe('step 5', () => {
+    test.skip('should work with rule FTW only', () => {
+      expect(fizzBuzz()).toEqual(fixtures.ftw);
+    });
+
+    test.skip('should work with rule GG only', () => {
+      expect(fizzBuzz()).toEqual(fixtures.gg);
+    });
   });
 });
