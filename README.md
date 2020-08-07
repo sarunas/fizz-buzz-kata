@@ -23,7 +23,7 @@ Write a program that prints the numbers from 1 to 100. But for multiples of thre
 
 - Add 3rd rule with number 7 and word "Foo"
 - Add 4th rule with number 11 and word "Boo"
-- Common multiples should be concatinated, e.g. number 21 is "FizzFoo" and number 77 is "FooBoo"
+- Common multiples should be concatenated, e.g. number 21 is "FizzFoo" and number 77 is "FooBoo"
 
 ## Step 3
 
