@@ -27,8 +27,8 @@ Write a program that prints the numbers from 1 to 100. But for multiples of thre
 
 ## Step 3
 
-- Add new type of rule "less than 16" and word "Small"
-- Add new type of rule "more than 95" and word "Big"
+- Add new type of rule "less than 16" and word "Small" (replace numbers, but prepend to words)
+- Add new type of rule "more than 95" and word "Big" (replace numbers, but prepend to words)
 
 ## Step 4
 
